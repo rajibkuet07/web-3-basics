@@ -17,5 +17,6 @@ jobs:
           node-version: '18.x'
       - run: yarn --frozen-lockfile
       - run: yarn autoclean
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
